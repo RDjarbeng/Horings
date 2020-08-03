@@ -13,6 +13,12 @@ body{
 	
 }
 
+.align-center{
+	text-align: center;
+}
+
+
+
 .navigation{
 	background: #005086;
 	color: #fff;
@@ -122,7 +128,14 @@ nav #company-name:hover{
 	
 }
 
+.section-box, .about-box{
+	margin: 5px;
+	text-align: center;
+}
 
+.subtitle p{
+	text-align: center;
+}
 
  footer{
 	 text-align: center;
