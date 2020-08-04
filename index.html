@@ -16,22 +16,22 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark navigation">
+  <nav class="navbar navbar-expand-md navbar-dark navigation" id="navigation">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
       <ul class="navbar-nav mr-auto ml-2">
-        <li class="nav-item active"> <a class="nav-link" href="#about-section">About Us</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Partners</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Careers</a> </li>
+        <li class="nav-item "> <a class="nav-link" href="#aboutus">About Us</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#partners">Partners</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#contact-section">Careers</a> </li>
 
       </ul>
     </div>
-    <div class="mx-auto order-0"><a class="navbar-brand  mx-auto" href="#" id="company-name"> HORINGS </a>
+    <div class="mx-auto order-0"><a class="navbar-brand  mx-auto" href="index.html" id="company-name"> HORINGS </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2"> <span
           class="navbar-toggler-icon"></span> </button>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto mr-2">
-        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#contact-section">Contact</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">Log in</a> </li>
       </ul>
     </div>
@@ -40,16 +40,16 @@
   <div class="container content">
     <section id="showcase">
       <div class="nav-caption">
-        <p>Financial solutions that support your business</p>
+        <p class="font-weight-bold">Financial solutions that support your business</p>
       </div>
 
       <img src="img/showcase.jpg" class="w-100">
 
     </section>
     <div>
-      <h5 class="blue-text text-center">About Us</h5>
+      <h5 class="blue-text text-center" id="aboutus">About Us</h5>
     </div>
-    <section id="about-section">
+    <section id="about-section" class="">
       <div class="about-box">
         <p class="about-header">Our Objective</p>
         <p>Our objective is to work to deliver payment platform services for our partners.</p>
@@ -102,43 +102,43 @@
 
 
 
-      <div class="subtitle">
+      <div class="subtitle" id="partners">
         <p class="blue-text">Our services are currently available only to our partners
         </p>
       </div>
-      <div class="d-md-flex" id="services-current">
+      <div class="d-md-flex mb-3" id="services-current">
         <div class="section-box  shadow">
           <p class="section-header text-center rounded-lg">E-Money collections</p>
-          <p class="align-center">Mobile money, debit and credit card collection</p>
+          <p class="text-center">Mobile money, debit and credit card collection</p>
         </div>
         <div class="section-box  shadow">
-          <p class="section-header align-center rounded">E-Money Transfers</p>
-          <p class="align-center">Transfer to a bank or a mobile money wallets</p>
+          <p class="section-header text-center rounded-lg">E-Money Transfers</p>
+          <p class="text-center">Transfer to a bank or a mobile money wallet</p>
         </div>
-        <div class="section-box  shadow">
-          <p class="section-header align-center">Investment Solution</p>
-          <p class="align-center">Purchasing and redeem financial assets</p>
+        <div class="section-box  shadow ">
+          <p class="section-header text-center rounded-lg">Investment Solution</p>
+          <p class="text-center">Purchasing and redeem financial assets</p>
         </div>
 
       </div>
     </section>
 
 
-    <div>
-      <h5 class="blue-text text-center">Contact Us
+    <div class="pt-2 pb-1">
+      <h5 class="blue-text text-center sub">Contact Us
       </h5>
     </div>
-    <section id="contact-section" class="mb-0">
+    <section id="contact-section" class="mb-0 pt-2 ">
       <div class="section-box">
-        <p class="section-header blue-text">Careers</p>
+        <p class="section-header blue-text subtitle">Careers</p>
         <p>Currently, we do not have any opportunities, but we do appreciate the opportunity to work with brilliant
           young minds in
           sync with our company's objectives and mission. Please send us your profile and contact details, and we will
           reach you
           as and when opportunities arise. Thank you.</p>
       </div>
-      <div class="section-box ">
-        <p class="section-header blue-text">Contact Us</p>
+      <div class="section-box p-1 border border-top-0 border-bottom-0">
+        <p class="section-header blue-text subtitle">Contact Us</p>
         <div>
           <div class="text-center "><small class="text-muted">HORINGS</small></div>
 
@@ -160,14 +160,45 @@
 
         </div>
       </div>
-      <div class="section-box">
-        <p class="section-header blue-text">Send us an email</p>
+      <div class="section-box ">
+        <p class="section-header blue-text subtitle">
+          Send us an email
+          <button class="btn d-md-none bg-info  dropdown-toggle" data-toggle="collapse"
+            data-target="#email-form"></button>
+        </p>
         <div>
-          <form action="" class="form">
-            <input type="text">
-            <label>Name</label><input type="text">
-            <label>Email</label><input type="email">
-            <input type="submit" class="btn bg-info">
+
+          <form action="index.html" id="email-form" class="collapse d-md-block">
+            <div class="form-group">
+
+              <!-- <label>Name: <span class="text-danger">*</span></label> -->
+              <div class="form-row">
+                <div class="col-lg">
+                  <input type="text" class="form-control" placeholder="Enter first name">
+                  <!-- <label class="text-secondary">First name</label> -->
+                </div>
+                <div class="col-lg">
+                  <input type="text" placeholder="Enter last name" class="form-control">
+
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <!-- <label for="email">Email address:</label> -->
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+
+              <input type="email" class="form-control" placeholder="Enter phone number" id="phone">
+            </div>
+            <div class="form-group">
+
+              <textarea class="form-control" placeholder="Enter message"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="bg-dark text-white"> Submit</button>
+            </div>
+
           </form>
 
         </div>
