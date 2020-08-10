@@ -1,6 +1,7 @@
 body * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -36,6 +37,10 @@ section {
 .navigation a {
   /* color: #fff; */
   color: #c0c0c0;
+}
+/* reduce nav opacity */
+#navigation {
+  opacity: 0.92;
 }
 #navigation a:hover {
   color: #fff;

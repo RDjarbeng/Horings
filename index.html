@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark navigation" id="navigation">
+  <nav class="navbar navbar-expand-md navbar-dark navigation sticky-top" id="navigation">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
       <ul class="navbar-nav mr-auto ml-2">
         <li class="nav-item "> <a class="nav-link" href="#aboutus">About Us</a> </li>
@@ -212,8 +212,31 @@
     </div>
   </footer>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  //highlight the current nav item
+  var btnContainer = document.getElementById("navigation");
+
+  // Get all elements with class="" inside the container
+  var btns = btnContainer.getElementsByClassName("nav-item");
+  
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = btnContainer.getElementsByClassName("active");
+
+      // If there's an active class
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+
+      // Add the active class to the current/clicked button
+      this.className += " active";
+    });
+  }
+</script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
