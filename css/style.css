@@ -41,6 +41,12 @@ section {
 /* reduce nav opacity */
 #navigation {
   opacity: 0.92;
+  background-image: linear-gradient(rgba(11,49,150, 1),rgb(11 48 150 / 97%), rgb(11 49 150 / 83%), rgb(11 49 150 / 61%));
+  
+  /*
+  linear-gradient(rgb(11 49 150), rgba(11,49,150, 0.0));
+  background-image: linear-gradient(rgba(0,0, 255, 1), rgba(0,0,255, 0.0));
+  background-image: linear-gradient(rgba(0,0, 255, 1),rgb(0 0 255 / 97%), rgb(0 0 255 / 83%), rgb(0 0 255 / 61%));*/
 }
 #navigation a:hover {
   color: #fff;
@@ -52,15 +58,21 @@ nav #company-name {
   text-transform: capitalize;
   letter-spacing: 0.9em;
   font-weight: 500;
+  transition-duration: 2.5s;
+  opacity:0.95;
 }
 
 nav #company-name:hover {
   /*	font-size: 1em;*/
-  letter-spacing: 1.1em;
+  letter-spacing: 1.4em;
   font-weight: 800;
   color: #ffff;
   border-bottom: 1px solid #f7d6bf;
   /*	text-decoration: underline;*/
+}
+/*for the footer*/
+.container-fluid.navigation {
+    background: rgba(11,49,150, 1);
 }
 
 /*Reduce navbar size*/
